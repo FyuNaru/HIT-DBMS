@@ -21,10 +21,15 @@ hit_DBMS/ 为django项目配置文件夹
 - settings.py 基本配置
 - urls.py 配置url
 - 其他文件为默认生成文件
+
 hit_DBMS_app/ 为实际的数据库项目
 - templates/ html页面文件夹
 - models.py 数据库表的定义
 - views.py 对数据库的全部操作
 - forms.py html表单的结构
 - 其他文件为默认生成文件
+
+db.sqlite3 数据库，可用sqlite的可视化软件打开
+
+manage.py 项目启动程序，在命令行窗口输入`python manage.py runserver`以运行程序
 
