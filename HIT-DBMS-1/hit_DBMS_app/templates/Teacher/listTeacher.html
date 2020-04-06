@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>listTeacher</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>sex</th>
+            <th>age</th>
+            <th>phone</th>
+            <th>email</th>
+            <th>department</th>
+            <th>lab</th>
+        </tr>
+        {% for item in li %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.sex }}</td>
+            <td>{{ item.age }}</td>
+            <td>{{ item.phone }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.department }}</td>
+            <td>{{ item.lab }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/Teacher/createTeacher/">create</a>
+</body>
+</html>

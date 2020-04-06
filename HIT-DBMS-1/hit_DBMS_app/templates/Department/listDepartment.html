@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>listDepartment</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>homepage</th>
+            <th>student_number</th>
+        </tr>
+        {% for item in li %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.homepage }}</td>
+            <td>{{ item.student_number }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/Department/createDepartment/">create</a>
+    <a href="/Department/deleteDepartment/">delete</a>
+    <a href="/Department/updateDepartment/">update</a>
+</body>
+</html>

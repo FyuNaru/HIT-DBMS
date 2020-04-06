@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>listExp</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>student_id</th>
+            <th>experience</th>
+        </tr>
+        {% for item in li %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.student_id }}</td>
+            <td>{{ item.experience }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/Experience/createExperience/">create</a>
+</body>
+</html>

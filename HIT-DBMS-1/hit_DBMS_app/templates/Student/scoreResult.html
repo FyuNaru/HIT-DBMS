@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>scoreResult</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>course</th>
+            <th>score</th>
+        </tr>
+        {% for item in result %}
+        <tr>
+            <td>{{ item.student_id }}</td>
+            <td>{{ item.course }}</td>
+            <td>{{ item.score }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>averageScore</title>
+</head>
+<body>
+        <table border="1">
+        <tr>
+            <th>id</th>
+            <th>avg</th>
+        </tr>
+        {% for item in result %}
+        <tr>
+            <td>{{ item.student_id }}</td>
+            <td>{{ item.avg }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>listPrize</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>student_id</th>
+            <th>name</th>
+        </tr>
+        {% for item in li %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.student_id }}</td>
+            <td>{{ item.name }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/Prize/createPrize/">create</a>
+</body>
+</html>

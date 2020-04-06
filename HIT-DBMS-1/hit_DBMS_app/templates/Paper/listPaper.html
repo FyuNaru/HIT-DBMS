@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>listPaper</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>title</th>
+        </tr>
+        {% for item in li %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.title }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/Paper/createPaper/">create</a>
+</body>
+</html>
